@@ -7,6 +7,7 @@ Supported databases:
 
 - [HSQLDB](http://www.hsqldb.org/)
 - [PostgresQL](https://www.postgresql.org/)
+- [Snowflake](https://www.snowflake.com/)
 
 PRs for other SQL databases are welcome.
 
@@ -16,8 +17,8 @@ The following installation methods are available:
 
 - Download a binary from Github releases
 - With [brew](https://brew.sh/): `brew install borkdude/brew/pod-babashka-<db>`
-where `<db>` must be substited with the database type, either `hsqldb` or
-`postgresql`.
+where `<db>` must be substited with the database type, `hsqldb`,
+`postgresql` or `snowflake`.
 
 ## Compatibility
 
@@ -26,7 +27,7 @@ Pods from this repo require babashka v0.0.96 or later.
 ## Available vars
 
 The pods expose these namespaces with vars, where `<db>` must be substited with
-the database type, either `hsqldb` or `postgresql`:
+the database type, `hsqldb`, `postgresql` or `snowflake`:
 
 - `pod.babashka.<db>`:
   - `execute!`: similar to `next.jdbc/execute!`

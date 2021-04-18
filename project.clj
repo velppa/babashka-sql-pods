@@ -18,7 +18,8 @@
                        :aot :all
                        :main pod.babashka.sql}
              :feature/postgresql {:dependencies [[org.postgresql/postgresql "42.2.18"]]}
-             :feature/hsqldb {:dependencies [[org.hsqldb/hsqldb "2.5.1"]]}}
+             :feature/hsqldb {:dependencies [[org.hsqldb/hsqldb "2.5.1"]]}
+             :feature/snowflake {:dependencies [[net.snowflake/snowflake-jdbc "3.9.2"]]}}
   :deploy-repositories [["clojars" {:url "https://clojars.org/repo"
                                     :username :env/clojars_user
                                     :password :env/clojars_pass
